@@ -259,20 +259,65 @@ div.col{
     color: #7B7F82;
 }
 .footer{
-    display: flex;
     margin-top: 100px;
-    width: 100%;
-    height: 300px;
+    padding: 10px;
     background: linear-gradient(81.85deg, #360363 6.71%, #011846 86.1%);}
-    #colFooter{
-        display: flex;
-        
-        background:transparent;
-        justify-content: space-between;
-        box-shadow: none;
-        color: #ffffff;
-    }
+    
 /* css Page Login */
+#colFooter{
+    width: 350px;
+    background-color:transparent;
+    box-shadow: none;
+    color: #fff;
+    padding : 30px;
+}
+.wrapper-col-1 h1{
+    font-weight:800;
+    font-size: 2rem;
+}
+.wrapper-col-1 p{
+    font-size: 14px;
+    width : 90%;
+    text-align : left;
+}
+.wrapper-icon img{
+    width:25px;
+    margin-right: 10px;
+}
+
+.wrapper-col-2 {
+    width : 250px;
+    display: flex;
+    flex-direction: column;
+    text-align :left;
+}
+.wrapper-col-2 h1{
+    font-weight:500;
+    font-size: 1.5rem;
+    text-align : left;
+
+}
+.wrapper-col-2 p{
+    font-size: 14px;
+    width : 90%;
+    text-align : left;
+}
+.wrapper-col-3 h1{
+    width : 250px;
+    font-weight:500;
+    font-size: 1.5rem;
+    text-align : left;
+
+}
+.wrapper-col-3 p{
+    font-size: 14px;
+    width : 90%;
+    text-align : left;
+}
+.copyright{
+    color: #fff;
+    text-align : center;
+}
 .pageLogin img{
     height: 924px;
     width: 627px;
@@ -281,4 +326,5 @@ div.col{
     border-radius: [object Object]px;
     
 }
+
 /* Akhir css Page Login */
