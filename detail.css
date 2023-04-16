@@ -76,3 +76,8 @@ body {
   .tanggal {
       font-size: 12px;
   }
+
+  /* detail mobil */
+  .card-text img{
+      width : 20px;
+  }
