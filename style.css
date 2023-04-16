@@ -6,6 +6,9 @@ nav{
     font-size:20px;
     justify-content:space-between;
 }
+nav a{
+    text-decoration:none;
+}
 ul {
   text-align: right;
   margin-left: 60%;
@@ -16,6 +19,38 @@ width: 100px;
 .slider img {
   height: 640px;
 
+
+}
+
+.icon_chat img{
+width : 20px;
+}
+div.icon_chat{
+    padding-left:95%;
+}
+.pertanyaan {
+    background-color:#AE88FF;
+    padding:10px;
+    margin: 5px;
+    display:inline-flex;
+    border-radius: 10px;
+}
+.jawaban p{
+    text-align:right;
+    background-color:#D3D3D3;
+    padding:10px;
+    margin: 5px;
+    display:inline-flex;
+    border-radius: 10px;
+
+}
+.row{
+    margin-bottom : 20px;
+    margin-top : 20px;
+}
+.col-md-4 img{
+    width: 25px;
+    padding-top:5px;
 }
 container.input_data{
     display:flex;
@@ -149,6 +184,10 @@ div.buttonDetail, div.buttonProduk{
     background: #252525;
     border-radius: 15px;
     border: 0px solid;
+}
+.buttonProduk button a{
+    color: #fff;
+    text-decoration: none;
 }
 button{
     text-align: center;
