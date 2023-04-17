@@ -23,8 +23,8 @@
                     <li class="menu-list" onclick="window.location.href = 'admin_pengguna.html';"><img src="assets/Vector_Pengguna.png" class="menu-list__icon"><a class="nav-link active" aria-current="page" href="#">Pengguna</a></li>
                     <li class="menu-list" onclick="window.location.href = 'admin_pesanan.html';"><img src="assets/Vector_Pesanan.png" class="menu-list__icon"><a class="nav-link active" aria-current="page" href="#">Pesanan</a></li>
                     <li class="menu-list" onclick="window.location.href = 'admin_produk.html';"><img src="assets/Vector_Produk.png" class="menu-list__icon"><a class="nav-link active" aria-current="page" href="#">Produk</a></li>
-                    <li class="menu-list" onclick="window.location.href = 'admin_chat.html';"><img src="assets/Vector_Chat.png" class="menu-list__icon"><a class="nav-link active" aria-current="page" href="#">Chat</a></li>
-                    <li class="menu-list nav-link active"><img src="assets/Vector_Notif.png" class="menu-list__icon">Notifikasi</li>
+                    <li class="menu-list nav-link active"><img src="assets/Vector_Chat.png" class="menu-list__icon">Chat</li>
+                    <li class="menu-list" onclick="window.location.href = 'admin_notifikasi.html';"><img src="assets/Vector_Notif.png" class="menu-list__icon"><a class="nav-link active" aria-current="page" href="#">Notifikasi</a></li>
                     <li class="menu-list"><img src="assets/Vector_Akun.png" class="menu-list__icon">Akun</li>
                 </ul>
             </div>
@@ -34,16 +34,19 @@
         <div style="width: 75%;">
             <nav class="navbar w-100" style="padding: 2% 0; background-image: linear-gradient(to right, #001743 , #350261); color: white;">
                 <div style="margin-left: 5%;">
-                    <h1>Notifikasi</h1>
+                    <h1>Chat</h1>
                 </div>
             </nav>
     
-            <div class="d-flex flex-row" style="margin: 1.5%; box-shadow: 4px 4px 16px rgb(0 0 0 / 10%); width: 85%; border-radius: 10px;">
-                <div class="d-flex justify-content-center" style="background-color: #9B96E8; width: 12%; height: 11vh; padding: 1.5% 0; border-radius: 10px 0 10px 10px">
-                    <img src="assets/Component 8.png" style="width: 50%; padding: 0 5%;">
+            <div class="d-flex flex-row" style="margin: 1.5%; box-shadow: 4px 4px 16px rgb(0 0 0 / 10%); width: 55%; border-radius: 10px;">
+                <div class="d-flex justify-content-center" style="background-color: #9B96E8; width: 14%; padding: 2%; border-radius: 10px 0 10px 10px">
+                    <img src="assets/Profile Icon.png" style="width: 90%;">
                 </div>
-                <div class="notif__text d-flex align-items-center fs-5" style="padding-left: 1%;">Pesanan baru masuk</div>
-                <div class="notif__time ms-auto d-flex align-items-end" style="padding: 1%; border-radius: 0 10px 10px 0;">15 Maret 2023</div>
+                <div class="d-flex flex-column" style="width: 100%; overflow: hidden;">
+                    <div class="chat__name d-flex align-items-center fs-4" style="padding-left: 1%;">Johni</div>
+                    <div class="chat__text d-flex flex-row fs-6 " style="padding-left: 1%;background-color: yellow;">Halo, Apakah ada mobil ini?</div>
+                </div>
+                <div class="chat__time ms-auto d-flex align-items-end" style="padding: 1%; border-radius: 0 10px 10px 0; background-color: aqua;">15 Maret 2023</div>
             </div>
 
         </div>
