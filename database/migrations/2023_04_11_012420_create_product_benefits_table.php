@@ -13,12 +13,19 @@ return new class extends Migration
     {
         Schema::create('product_benefits', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('product_id');
+            // 1st method
+            // $table->bigInteger('product_id')->unsigned();
+            
+            // 2nd method
+            $table->foreignId('product_id')->constrained();
             $table->string('tipe_mobil');
             $table->string('tahun');
             $table->string('warna');
             $table->integer('seat');
             $table->timestamps();
+           
+            // 1st method
+            // $table->foreign('product_id')->references('id')->on('products')->onDelete('cascade');
         });
     }
 
