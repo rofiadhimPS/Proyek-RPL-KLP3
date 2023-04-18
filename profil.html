@@ -22,6 +22,17 @@
     <link rel="icon" href="gambar/tkro.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
+  <style>
+    .profil img{
+      width:30px ;
+      height:30px ;
+      background-color: #fff;
+      border-radius: 50%;
+      margin-left: 20px;
+
+    }
+
+  </style>
   <body>
    <!-- navbar -->
    <nav
@@ -56,19 +67,25 @@
          <li class="nav-item">
            <a class="nav-link" href="notifikasi.html">Notifikasi</a>
          </li>
-         <button
-           type="button"
-           class="btn btn-light"
-           style="border-radius: 30px; ">
-           <a href="login.html">Login</a>
-         </button>
+         <div class="btn btn-dark"style="border-radius:50%; width:30px; height:30px; margin-left:10px; margin-top:5px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><a href=""><img src="assets/.png" alt=""></a></div>
        </ul>
      </div>
    </div>
  </nav>
  <!-- akhir navbar -->
 
- <!-- cardAkun -->
+ <!-- cardProfil -->
+ 
+<div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Try scrolling the rest of the page to see this option in action.</p>
+  </div>
+</div>
+
  
    
 
