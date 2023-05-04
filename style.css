@@ -67,6 +67,7 @@ div.icon_chat{
 .row{
     margin-bottom : 20px;
     margin-top : 20px;
+    justify-content:space-evenly;
 }
 .col-md-4 img{
     width: 25px;
@@ -319,12 +320,12 @@ div.col{
 }
 .footer{
     margin-top: 100px;
-    padding: 10px;
+    /* padding: 10px; */
     background: linear-gradient(81.85deg, #360363 6.71%, #011846 86.1%);}
     
 /* css Page Login */
 #colFooter{
-    width: 350px;
+    /* width: 350px; */
     background-color:transparent;
     box-shadow: none;
     color: #fff;

@@ -18,7 +18,43 @@
 
   </style>
   <body>
-    
+    <nav
+    class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
+    style="
+      background: linear-gradient(89.97deg, #35015f 0.02%, #6157ff 99.97%);
+    "
+  >
+    <div class="container">
+      <a class="navbar-brand" href="#">Cv. Adinalta</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="home.html"
+              >Beranda</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="pesanan1.html">Pemesanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="notifikasi.html">Notifikasi</a>
+          </li>
+          <div class="btn btn-light" style="border-radius:50%; width:30px; height:30px; margin-left:10px; margin-top:5px;" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><a href=""><img src="assets/.png" alt=""></a></div>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
     <section>
         <div class="d-flex flex-column align-items-center">
@@ -48,13 +84,13 @@
 
           <div class="d-flex flex-column align-items-start" style="width: 85%; padding: 10% 0;">
             
-            <div class="row px-3" style="width: 30%;">
-              <div class="col" style="transform: rotate(-270deg);">
+            <div class="row px-4 mt-5">
+              <div class="colom" style="transform: rotate(-270deg);">
                   <ul id="progressbar" >
-                      <li class="step0 active " id="step1"><h6 style="transform: rotate(-90deg);">Pesanan diproses</h6></li>
-                      <li class="step0 " id="step2"><h6 style="transform: rotate(-90deg);">Pesanan diproses</h6></li>
-                      <li class="step0 " id="step3"><h6 style="transform: rotate(-90deg);">Pesanan diproses</h6></li>
-                      <li class="step0 " id="step4"><h6 style="transform: rotate(-90deg);">Pesanan diproses</h6></li>
+                      <li class="step1 active  " id="step1" ><div class="position-absolute top-50 start-100 translate-middle" style="transform: rotate(-90deg); ">Pesanan diproses</div></li>
+                      <li class="step2 active" id="step2"><div  style="transform: rotate(-90deg);">Pesanan diproses</div></li>
+                      <li class="step3 active " id="step3"><div style="transform: rotate(-90deg);">Pesanan diproses</div></li>
+                      <li class="step4 " id="step4"><div style="transform: rotate(-90deg);"></div></li>
                   </ul>
               </div>
             </div>
@@ -63,10 +99,13 @@
 
             </div>
           </div>
+          
 
           <div style="margin-bottom: 4%;">
             <button type="button" class="btn btn-primary btn-lg fs-4" style=" background-color: black;  border: 0;" data-bs-toggle="modal" data-bs-target="#exampleModal">Batalkan Pesanan</button>
           </div>
+
+         
 
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
