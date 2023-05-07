@@ -218,10 +218,8 @@ container.gelombang path{
     background-size: 100px 100%;
 }
 div.bgColor{
-    background-color: #ae88ff;
     margin-top:0px;
     padding-top:0px;
-    height: 1700px;
 }
 .bgColor h2{
     color: #ffffff;
@@ -246,8 +244,10 @@ div.imageClient{
     width: 100%;
 }
 div.kerjasama img{
-    width: 50px;
-    align-items
+    background-color: #837ED9; 
+    width: 100%;
+    display:flex;
+    align-items: center;
     
 
     
