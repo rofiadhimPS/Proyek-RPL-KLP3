@@ -61,14 +61,14 @@
     </div>
   </nav>
   <section class="jumbotron text-center" class="text-center" style="background-color:#AE88FF40;">
-    <div>
-      <h2>Edit AKun</h2>
-      <div class="position-relative">
-        <img src="assets/99 kubah.jpg" class="rounded-circle mt-5" style="width:200px; height:200px" alt="...">
-        <div class="position-absolute top-100 start-50 translate-middle">
-        </div>
+    <h2 style="margin-top: 80px;">Edit Akun</h2>
+    <div class="d-flex flex-row position-relative mt-1 mb-5" style="width: 100%; border-radius: 10px; height: 15vh;">
+      <div class="d-flex justify-content-center position-absolute top-100 start-50 translate-middle" style="width: 100%;">
+          <img src="assets/Profile Picture.png" style="border-radius: 50%; width: 12%;">
+          <div class="d-flex justify-content-center" style="background-color: #350261; width: fit-content; border-radius: 50%; padding: 0.3% 0; position: absolute; bottom: 12%; right: 44%;"><img src="assets/Camera Icon.png" style="width: 60%;"></div>
       </div>
-    </div>
+      
+  </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
         fill="#ffffff"
@@ -77,47 +77,25 @@
       ></path>
     </svg>
   </section>
+
+  <form >
+    <div class="mx-5 mb-4">
+      <label for="exampleInputEmail1" class="form-label">Nama</label>
+      <input type="text" class="form-control" style="border: 1px solid #e2dfdf; width : 50%; border-radius: 5px;" id="exampleInputNama" placeholder="Namakamu" aria-describedby="emailHelp">
+    </div>
+    <div class="mx-5 mb-4">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" style="border: 1px solid #e2dfdf; width : 50%; border-radius: 5px;" id="exampleInputEmail1" placeholder="@emailkamu" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mx-5 mb-4">
+      <label for="exampleInputNo" class="form-label" >No Handphone</label>
+      <input type="number" class="form-control" style="border: 1px solid #e2dfdf; width : 50%; border-radius: 5px;" id="exampleInputNo" placeholder="0851234++">
+    </div>
+  </form>
+
       <div class="data_pengguna m-5">
-        <div class="namaPengguna">Nama</div>
-        <div class="d-flex mb-3 ">
-        <div class="isi_namaPengguna shadow-sm p-2 " style="border: 1px solid #e2dfdf; width : 50%; border-radius: 5px;">My Name</div>
-        <button class="border border-0 rounded-2 shadow-sm p-2 mx-2 ">Edit</button>
-        </div>
-        <div class="namaPengguna">Alamat Email</div>
-        <div class="d-flex mb-3 ">
-        <div class="isi_namaPengguna shadow-sm p-2  " style="border: 1px solid #e2dfdf; width : 50%; border-radius: 5px;">@myemail.com</div>
-        <button class="border border-0 rounded-2 shadow-sm p-2 mx-2">Edit</button>
-        </div>
-        <div class="namaPengguna">No Handphone</div>
-        <div class="d-flex mb-3 ">
-        <div class="isi_namaPengguna shadow-sm p-2 " style="border: 1px solid #e2dfdf; width : 50%; border-radius: 5px;">081234566790</div>
-        <button class="border border-0 rounded-2 p-2 shadow-sm  mx-2">Edit</button>
-        </div>
-        <button class="border bg-dark border-0  shadow-sm p-2 rounded-2" style="color: #fff; width : 100px;"> <a href="profil.html" style="color: #fff; text-decoration: none;" >Simpan</a></button>
-        <button type="button" class="border bg-danger border-0  shadow-sm p-2 rounded-2"  style="color: #fff; width : 150px;" data-bs-toggle="modal" data-bs-target="#exampleModal">Hapus Akun</button>
-         
-
-         
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header" style="background-color: #360363;">
-                  <h5 class="modal-title fs-4" id="exampleModalLabel" style="color: white;">Hapus Akun?</h5>                </div>
-                <div class="modal-body d-flex justify-content-center">
-                  <img src="assets/Website development.png">
-                </div>
-                <div class="modal-footer d-flex flex-column">
-                  <button type="button" class="btn btn-primary"  style="background-color: black; "> <a data-toggle="modal" data-target="#"href="home.html" style="text-decoration: none; color:#fff"> Iya, hapus akun </a></button>
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-        
+        <button class="border bg-dark border-0  shadow-sm p-2 rounded-2" style="color: #fff; width : 100px;"> <a href="profil.html" style="color: #fff; text-decoration: none;" >Simpan</a></button>              
       </div>
 
     <script
