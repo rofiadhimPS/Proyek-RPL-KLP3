@@ -52,7 +52,7 @@ Route::get('/webadmin/produk', function () {
     ]);
 });
 Route::get('/login', function () {
-    return view('home');
+    return view('login');
 });
 Route::get('/coba', function () {
     return view('coba');

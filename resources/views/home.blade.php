@@ -19,8 +19,8 @@
       integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="assets/tkro.png" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="('assets/tkro.png')" />
+    <link rel="stylesheet" href="{{asset('css/style.css')}}" />
   </head>
   <body>
     <!-- navbar -->
@@ -60,7 +60,7 @@
               type="button"
               class="btn btn-light"
               style="border-radius: 30px; ">
-              <a href="login.html">Login</a>
+              <a href={{ url('/login') }}>Login</a>
             </button>
           </ul>
         </div>
