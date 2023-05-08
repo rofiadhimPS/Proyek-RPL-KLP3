@@ -1,15 +1,6 @@
 body {
     font-family: sen;
   }
-  nav{
-      height: 80px;
-      font-size:20px;
-      justify-content:space-between;
-  }
-  ul {
-    text-align: right;
-    margin-left: 60%;
-  }
   div.cardDetailProduk{
       align-items:center; 
     border: 0px solid #FFFF;

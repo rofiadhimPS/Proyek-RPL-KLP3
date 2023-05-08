@@ -1,5 +1,4 @@
   .row{
-    background-color: aquamarine;
     display: flex;
     flex-flow: column;
     margin: 0 auto !important;

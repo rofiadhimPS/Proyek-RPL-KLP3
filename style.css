@@ -1,18 +1,6 @@
 body {
   font-family: sen;
 }
-nav{
-    height: 80px;
-    font-size:20px;
-    justify-content:space-between;
-}
-nav a{
-    text-decoration:none;
-}
-ul {
-  text-align: right;
-  margin-left: 60%;
-}
 
 /* profil */
 .col-sm-4 img{
