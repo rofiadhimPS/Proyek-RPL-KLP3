@@ -20,8 +20,8 @@
 #progressbar li {
     list-style-type: none;
     font-size: 13px;
-    width: 25%;
-    float: left;
+    width: 100%;
+    text-align : center;
     position: relative;
     font-weight: 400;
     color: #455A64 !important;
@@ -31,30 +31,33 @@
 #progressbar #step1:before {
     /* content: "1"; */
     color: #fff;
-    width: 29px;
-    margin-left: 15px !important;
-    padding-left: 11px !important;
+    width: 20%;
+    
 }
 
 
 #progressbar #step2:before {
     /* content: "2"; */
     color: #fff;
-    width: 29px;
+    width: 20%;
 
 }
 
 #progressbar #step3:before {
     /* content: "3"; */
     color: #fff;
-    width: 29px;
-    margin-right: 15px !important;
-    padding-right: 11px !important;
+    width: 20%;
+    
+}
+#progressbar #step4:before {
+    /* content: "3"; */
+    color: #fff;
+    width: 20%;
 }
 
 #progressbar li:before {
-    line-height: 29px;
-    display: block;
+    line-height: 20%;
+    display: flex;
     font-size: 12px;
     background: #455A64 ;
     border-radius: 50%;
@@ -63,32 +66,24 @@
 
  #progressbar li:after {
     content: '';
-    width: 121%;
-    height: 2px;
+    width: 100%;
+    height: 5px;
     background: #455A64;
     position: absolute;
     left: 0%;
     right: 0%;
     top: 15px;
-    z-index: -1;
+    /* z-index: -1; */
 } 
 
-#progressbar li:nth-child(2):after {
-    left: 50%;
-}
-
-#progressbar li:nth-child(1):after {
-    left: 25%;
-    width: 121%;
-}
-#progressbar li:nth-child(3):after {
-    left: 25% !important;
-    width: 50% !important;
-}
 
 #progressbar li:nth-child(4):after {
     left: 0% !important;
     width: 50% !important;
+}
+#progressbar li:nth-child(1):after {
+    left: 50% !important;
+    width: 100% !important;
 }
 
 #progressbar li.active:before,
@@ -104,11 +99,11 @@
 
 #progressbar li {
     list-style-type: none;
-    font-size: 13px;
+    font-size: 14px;
     width: 25%;
     float: left;
     position: relative;
-    font-weight: 400;
+    font-weight: 600;
     color: #455A64 !important;
     
 }
@@ -117,8 +112,6 @@
     content: "1";
     color: transparent;
     width: 29px;
-    margin-left: 15px !important;
-    padding-left: 11px !important;
 }
 
 
@@ -133,8 +126,7 @@
     content: "3";
     color: transparent;
     width: 29px;
-    margin-right: 15px !important;
-    padding-right: 11px !important;
+  
 }
 
 #progressbar #step4:before {
