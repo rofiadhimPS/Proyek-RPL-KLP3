@@ -63,7 +63,11 @@ Route::get('/webadmin/produk', function () {
     ]);
 });
 Route::get('/login', function () {
+<<<<<<< HEAD
     return view('loginNew');
+=======
+    return view('login');
+>>>>>>> 649c926aeb73148047c6096351c009667f33080a
 });
 Route::get('/daftar', function () {
     return view('daftar');
