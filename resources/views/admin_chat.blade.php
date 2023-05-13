@@ -9,7 +9,7 @@
     
             <div class="d-flex flex-row" style="margin: 1.5%; box-shadow: 4px 4px 16px rgb(0 0 0 / 10%); width: 55%; border-radius: 10px;">
                 <div class="d-flex justify-content-center" style="background-color: #9B96E8; width: 14%; padding: 2%; border-radius: 10px 0 10px 10px">
-                    <img src="assets/Profile Icon.png" style="width: 90%;">
+                    <img src="{{ asset('assets/Profile Icon.png') }}" style="width: 90%;">
                 </div>
                 <div class="d-flex flex-column" style="width: 100%; overflow: hidden; margin: 0 1.5%;">
                     <div class="chat__name d-flex align-items-center fs-4" style="padding-left: 1%;">Johni</div>

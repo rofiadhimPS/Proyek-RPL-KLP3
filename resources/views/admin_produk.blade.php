@@ -15,7 +15,7 @@
 
             <div class="d-flex justify-content-evenly" style="padding: 5%;">
                 <div class="card" style="width: 18rem; box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);">
-                    <img class="card-img-top" src="assets/toyota-rush1_prev_ui_left.png" alt="Card image cap">
+                    <img class="card-img-top" src="{{ asset('assets/toyota-rush1_prev_ui_left.png') }}" alt="Card image cap">
                     <div class="card-body d-flex flex-column justify-content-center">
                       <h5 class="card-title">Rush</h5>
                       <p class="card-text">500K/Hari</p>
@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; box-shadow: 4px 4px 16px rgb(0 0 0 / 10%);">
-                    <img class="card-img-top" src="assets/toyota-rush1_prev_ui_left.png" alt="Card image cap">
+                    <img class="card-img-top" src="{{ asset('assets/toyota-rush1_prev_ui_left.png') }}" alt="Card image cap">
                     <div class="card-body d-flex flex-column justify-content-center">
                       <h5 class="card-title">Rush</h5>
                       <p class="card-text">500K/Hari</p>

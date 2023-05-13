@@ -24,24 +24,14 @@
                               </tr>
                             </thead>
                             <tbody>
+                              @foreach ($users as $usr)
                               <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>mark@gmail.com</td>
-                                <td>085XXXXXX002</td>
+                                <th scope="row">{{ $loop->iteration }}</th>
+                                <td>{{ $usr->name }}</td>
+                                <td>{{ $usr->email }}</td>
+                                <td>{{ $usr->no_telp }}</td>
                               </tr>
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Jacob@gmail.com</td>
-                                <td>082XXXXXX019</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>Larry@gmail.com</td>
-                                <td>081XXXXXX713</td>
-                              </tr>
+                              @endforeach
                             </tbody>
                         </table>
                     </div>

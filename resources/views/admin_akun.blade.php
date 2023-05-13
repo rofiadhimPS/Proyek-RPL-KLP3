@@ -9,8 +9,8 @@
     
             <div class="d-flex flex-row position-relative" style="margin: 1.5%; background-color: #BBB5FF; box-shadow: 4px 4px 16px rgb(0 0 0 / 10%); width: 97%; border-radius: 10px; height: 15vh;">
                 <div class="d-flex justify-content-center position-absolute top-100 start-50 translate-middle" style="width: 100%;">
-                    <img src="assets/Profile Picture.png" style="border-radius: 50%; width: 12%;">
-                    <div class="d-flex justify-content-center" style="background-color: #350261; width: fit-content; border-radius: 50%; padding: 0.3% 0; position: absolute; bottom: 12%; right: 44%;"><img src="assets/Camera Icon.png" style="width: 60%;"></div>
+                    <img src="{{ asset('assets/Profile Picture.png') }}" style="border-radius: 50%; width: 12%;">
+                    <div class="d-flex justify-content-center" style="background-color: #350261; width: fit-content; border-radius: 50%; padding: 0.3% 0; position: absolute; bottom: 12%; right: 44%;"><img src="{{ asset('assets/Camera Icon.png') }}" style="width: 60%;"></div>
                 </div>
                 
             </div>

@@ -35,12 +35,14 @@
                               </tr>
                             </thead>
                             <tbody>
+                            @foreach ($checkouts as $chot)
+                            
                               <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>mark@gmail.com</td>
-                                <td>085XXXXXX002</td>
-                                <td>12/04/2023</td>
+                                <th scope="row">{{ $loop->iteration }}</th>
+                                <td>{{ $chot->user_id }}</td>
+                                <td>{{ $chot->lokasi_penjemputan }}</td>
+                                <td>{{ $chot->metode_pembayaran}}</td>
+                                <td>{{ $chot->tanggal_pesan }}</td>
                                 <td>Avanza</td>
                                 <td class="d-flex justify-content-center">
                                   <div class="dropdown">
@@ -57,70 +59,8 @@
                                 </td>
                                 
                               </tr>
-                              
-                              <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>jacob@gmail.com</td>
-                                <td>082XXXXXX019</td>
-                                <td>12/04/2023</td>
-                                <td>Avanza</td>
-                                <td class="d-flex justify-content-center">
-                                  <div class="dropdown">
-                                    <button class="btn dropdown-toggle btn-dropdown dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
-                                      Pilih
-                                    </button>
-                                    <ul class="dropdown-menu orderStatus" aria-labelledby="dropdownMenuButton1">
-                                      <li><a class="dropdown-item" href="#">Konfirmasi</a></li>
-                                      <li><a class="dropdown-item" href="#">Batalkan</a></li>
-                                      <li><a class="dropdown-item" href="#">Selesai</a></li>
-                                      <li><a class="dropdown-item" href="#">Penjemputan</a></li>
-                                    </ul>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">3</th>
-                                <td>Larry</td>
-                                <td>larry@gmail.com</td>
-                                <td>081XXXXXX713</td>
-                                <td>12/04/2023</td>
-                                <td>Avanza</td>
-                                <td class="d-flex justify-content-center">
-                                  <div class="dropdown">
-                                    <button class="btn dropdown-toggle btn-dropdown dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
-                                      Pilih
-                                    </button>
-                                    <ul class="dropdown-menu orderStatus" aria-labelledby="dropdownMenuButton1">
-                                      <li><a class="dropdown-item" href="#">Konfirmasi</a></li>
-                                      <li><a class="dropdown-item" href="#">Batalkan</a></li>
-                                      <li><a class="dropdown-item" href="#">Selesai</a></li>
-                                      <li><a class="dropdown-item" href="#">Penjemputan</a></li>
-                                    </ul>
-                                  </div>
-                                </td>
-                              </tr>
-                              <tr>
-                                <th scope="row">4</th>
-                                <td>George</td>
-                                <td>george@gmail.com</td>
-                                <td>081XXXXXX020</td>
-                                <td>12/04/2023</td>
-                                <td>Avanza</td>
-                                <td class="d-flex justify-content-center">
-                                  <div class="dropdown">
-                                    <button class="btn dropdown-toggle btn-dropdown dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: black;">
-                                      Pilih
-                                    </button>
-                                    <ul class="dropdown-menu orderStatus" aria-labelledby="dropdownMenuButton1">
-                                      <li><a class="dropdown-item" href="#">Konfirmasi</a></li>
-                                      <li><a class="dropdown-item" href="#">Batalkan</a></li>
-                                      <li><a class="dropdown-item" href="#">Selesai</a></li>
-                                      <li><a class="dropdown-item" href="#">Penjemputan</a></li>
-                                    </ul>
-                                  </div>
-                                </td>
-                              </tr>
+                            @endforeach
+                            
                             </tbody>
                         </table>
                     </div>
