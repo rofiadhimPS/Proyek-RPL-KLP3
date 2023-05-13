@@ -19,54 +19,41 @@
       integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="assets/tkro.png" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="{{ asset('assets/tkro.png') }}" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
   </head>
   <body>
     <!-- navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
-      style="
-        background: linear-gradient(89.97deg, #35015f 0.02%, #6157ff 99.97%);
-      "
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">Cv. Adinalta</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html"
-                >Beranda</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pesanan1.html">Pemesanan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="notifikasi.html">Notifikasi</a>
-            </li>
-            <button
-              type="button"
-              class="btn btn-light"
-              style="border-radius: 30px; ">
-              <a href="login.html">Login</a>
-            </button>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- akhir navbar -->
+ <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background: linear-gradient(89.97deg, #35015f 0.02%, #6157ff 99.97%);">
+  <div class="container">
+    <a class="navbar-brand" href="#">Cv.Adinalta</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pesanan">Pemesanan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/notifikasi">Notifikasi</a>
+        </li>
+        <li class="nav-item">
+          <button
+         type="button"
+         class="btn btn-light"
+         style="border-radius: 30px; ">
+         <a href="/login" style="text-decoration: none;">Login</a>
+       </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+ <!-- akhir navbar -->
     <!-- slider -->
     <container class="slider">
       <div id="carouselExampleCaptions" class="carousel slide">
@@ -94,7 +81,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="assets/parallax2.jpg" class="d-block w-100" alt="..." />
+            <img src="{{ asset('assets/parallax2.jpg') }}" class="d-block w-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
               <h1>Rental Mobil</h1>
               <p>
@@ -165,7 +152,7 @@
   
 </div>
 </div>
-    <container class="input_data">
+    <container  class="input_data  ">
       <!-- dropdown tipe mobil -->
 
       <div class="dropdown">
@@ -195,7 +182,7 @@
       </div>
       <!-- akhir dropdown -->
       <!-- datepicker -->
-      <div class="tanggal">
+      <div  class="tanggal">
         <input type="datetime-local" />
       </div>
       <!-- akhir datepicker -->
@@ -260,10 +247,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -293,10 +280,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -326,10 +313,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -363,10 +350,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -396,10 +383,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -429,10 +416,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -466,10 +453,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -499,10 +486,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -532,10 +519,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -569,10 +556,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -603,10 +590,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -636,10 +623,10 @@
                 </div>
               </div>
               <div class="buttonProduk">
-                <button><a href="pembayaran.html">Rental Sekarang</a></button>
+                <button><a href="/pembayaran">Rental Sekarang</a></button>
               </div>
               <div class="buttonDetail">
-                <a href="detail_mobil.html">Detail</a>
+                <a href="/detailmobil">Detail</a>
               </div>
             </div>
           </div>
@@ -656,19 +643,49 @@
         ></path>
       </svg>
     </container>
-    <div class="bgColor">
-      <div class="testimoni">
+    <div class="bgColor" style="background:#ae88ff; "hhhhhhh>
+      <div class="testimoni" >
         <h2>Testimoni</h2>
-        <img
-          src="assets/TESTIMONIAL LANDING PAGE.png"
-          alt="testimoni rental mobil"
-        />
-      </div>
-      <div class="client">
-        <h2>Client Kami</h2>
-        <div class="imageClient">
-          <img src="assets/client.png" alt="client rental mobil" />
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/TESTIMONIAL LANDING PAGE.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/TESTIMONIAL LANDING PAGE.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assets/TESTIMONIAL LANDING PAGE.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="client d-flex align-content-center flex-wrap flex-column">
+        <h2>Client Kami</h2>
+        <div class="card-group">
+          <div class="card p-0">
+            <img src="assets/client_wisata.jpeg" class="card-img-top" alt="..." style="width:100%;">
+            <div class="card-body  text-center">
+              <h5 class="card-title">Client</h5>
+              <p class="card-text">Orang Biasa </p>
+            </div>
+          </div>
+          <div class="card p-0">
+            <img src="assets/client_tumming.jpeg" class="card-img-top p-0" alt="..." style="width:100%;">
+            <div class="card-body  text-center">
+              <h5 class="card-title">Tumming Abu</h5>
+              <p class="card-text">Komedian dan Kreator Konten</p>
+            </div>
+          </div>
+          <div class="card p-0">
+            <img src="assets/client-arman.jpeg" class="card-img-top p-0" alt="..." style="width:100%;">
+            <div class="card-body  text-center">
+              <h5 class="card-title">Armand Maulana</h5>
+              <p class="card-text">Musisi</p>
+            </div>
+          </div>
+        </div>
+      
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -699,16 +716,8 @@
           </div>
         </div>
         <div class="col-4">
-          <div class="googlemap">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!4v1679414295771!6m8!1m7!1sacFis0Vz1OFx8KET5H9cFg!2m2!1d-5.186570264718928!2d119.4599379722038!3f182.83343249118886!4f0.7351029070140811!5f0.7820865974627469"
-              width="600"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
+          <div class="embed-responsive embed-responsive ratio-16x9 " >
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.481682517147!2d119.45736307296771!3d-5.1866949947908045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee24df4c360c7%3A0x8e9b6475a11ea2a!2sJl.%20Minasa%20Upa%20No.M.16%2F8%2C%20RT.002%2FRW.09%2C%20Gn.%20Sari%2C%20Kec.%20Rappocini%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan%2090222!5e0!3m2!1sid!2sid!4v1682946760914!5m2!1sid!2sid" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -717,14 +726,14 @@
     <div class="kerjasama">
       <p>Ingin Melakukan Kerjasama dengan Kami?</p>
       <p>Hubungi Kami</p>
-      <a href="#"><img src="assets/informasi kerja sama rental mobil.png" alt="informasi kerja sama rental mobil"></a>
+      <a href="#"><img src="assets/informasi kerja sama rental mobil.png" alt="informasi kerja sama rental mobil" style="background:none;"></a>
       <p class="atau">atau</p>
       <button class="info">Daftar Disini</button>
 
     </div>
 
     <!-- Artikel -->
-    <div class="artikel">
+    <div class="artikel justify-content-lg-start">
       <h2>Artikel</h2>
       <div class="cardArtikel">
         <div class="container text-center">
@@ -792,7 +801,7 @@
     
 
     <!-- footer -->
-    <section class="footer">
+    <section class="footer justify-content-evenly">
       <footer>
         <div class="row">
           <div class="col" id="colFooter">
