@@ -11,7 +11,8 @@ class CheckoutController extends Controller
 {
     public function index(){
         $checkouts = Checkout::all();
-        return view('checkouts.index', compact('checkouts'));
+        $title = 'Pesanan';
+        return view('admin_pesanan', ['checkouts' => $checkouts, 'title' => $title]);
     }
 
     public function create(Request $request){
