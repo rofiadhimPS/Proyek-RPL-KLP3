@@ -1,17 +1,25 @@
 body {
   font-family: sen;
 }
-nav{
-    height: 80px;
-    font-size:20px;
-    justify-content:space-between;
+
+/* profil */
+.col-sm-4 img{
+width:50px;
+height:50px;
+border-radius:50%;
+background-color:#000;
 }
-nav a{
-    text-decoration:none;
+button.btn-
+div.row{
+    margin:0px;
 }
-ul {
-  text-align: right;
-  margin-left: 60%;
+
+.modal-body img{
+    width:30%;
+
+}
+.list-group{
+    margin-top:60px;
 }
 .slider{
 width: 100px;
@@ -47,6 +55,7 @@ div.icon_chat{
 .row{
     margin-bottom : 20px;
     margin-top : 20px;
+    justify-content:space-evenly;
 }
 .col-md-4 img{
     width: 25px;
@@ -197,10 +206,8 @@ container.gelombang path{
     background-size: 100px 100%;
 }
 div.bgColor{
-    background-color: #ae88ff;
     margin-top:0px;
     padding-top:0px;
-    height: 1700px;
 }
 .bgColor h2{
     color: #ffffff;
@@ -225,8 +232,10 @@ div.imageClient{
     width: 100%;
 }
 div.kerjasama img{
-    width: 50px;
-    align-items
+    background-color: #837ED9; 
+    width: 100%;
+    display:flex;
+    align-items: center;
     
 
     
@@ -299,12 +308,12 @@ div.col{
 }
 .footer{
     margin-top: 100px;
-    padding: 10px;
+    /* padding: 10px; */
     background: linear-gradient(81.85deg, #360363 6.71%, #011846 86.1%);}
     
 /* css Page Login */
 #colFooter{
-    width: 350px;
+    /* width: 350px; */
     background-color:transparent;
     box-shadow: none;
     color: #fff;
