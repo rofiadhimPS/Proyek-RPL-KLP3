@@ -19,7 +19,7 @@
       integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
   </head>
   <style>
 
@@ -55,21 +55,21 @@
      <div class="collapse navbar-collapse" id="navbarNav">
        <ul class="navbar-nav ms-auto">
          <li class="nav-item">
-           <a class="nav-link" aria-current="page" href="home.html"
+           <a class="nav-link" aria-current="page" href="/home?"
              >Beranda</a
            >
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="pesanan1.html">Pemesanan</a>
+           <a class="nav-link" href="/pesanan?">Pemesanan</a>
          </li>
          <li class="nav-item">
-           <a class="nav-link" href="notifikasi.html">Notifikasi</a>
+           <a class="nav-link" href="/notifikasi">Notifikasi</a>
          </li>
          <button
            type="button"
            class="btn btn-light"
            style="border-radius: 30px; ">
-           <a href="login.html">Login</a>
+           <a href="/login">Login</a>
          </button>
        </ul>
      </div>
@@ -79,11 +79,11 @@
  <!-- card  -->
  <div class="isi" style="margin-top:100px; ">
  <h2 style="text-align:center;">Status Pesanan</h2>
- <div class="cardPesanan">
+ <div class="cardPesanan" style="text-align: center;">
  <div class="card mb-3" style="max-width: 540px; margin-left: 0px;">
     <div class="row g-0">
       <div class="col-md-4" style=" padding:0px;">
-        <img src="assets/status-kosong.png" class="img-fluid rounded-start" alt="tidak ada pesanan">
+        <img src="{{ asset('assets/status-kosong.png') }}" class="img-fluid rounded-start" alt="tidak ada pesanan">
       </div>
       <div class="col-md-8">
         <div class="card-body">

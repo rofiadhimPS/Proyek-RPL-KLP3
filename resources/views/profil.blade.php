@@ -19,8 +19,8 @@
       integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="gambar/tkro.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="{{ asset('css/tkro.png') }}" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
   </head>
   <body>
    <!-- navbar -->

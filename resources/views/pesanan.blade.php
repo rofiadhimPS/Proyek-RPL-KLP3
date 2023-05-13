@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Bootstrap demo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-        <link rel="stylesheet" href="pesanan.css">
+        <link rel="stylesheet" href="{{ asset('css/pesanan.css') }}">
     </head>
     <body>
         <!-- navbar -->
@@ -31,15 +31,15 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="home.html"
+            <a class="nav-link " aria-current="page" href="/"
               >Beranda</a
             >
           </li>
           <li class="nav-item ">
-            <a class="nav-link active" href="#">Pemesanan</a>
+            <a class="nav-link active" href="/pesanan">Pemesanan</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="notifikasi.html">Notifikasi</a>
+            <a class="nav-link" href="/notifikasi">Notifikasi</a>
           </li>
           <button
             type="button"
@@ -60,7 +60,7 @@
                 <div class="card mt-5" style="max-width: max-content;border: 0;">
                     <div class="row g-5">
                         <div class="col">
-                            <img src="/avanza.png" class="img-fluid rounded-start" alt="...">
+                            <img src="{{ asset('assets/avanza.png') }}" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col justify-content-center">
                             <div class="card-body">
