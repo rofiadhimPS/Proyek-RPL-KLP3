@@ -19,148 +19,322 @@
       integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51"
       crossorigin="anonymous"
     />
-    <link rel="icon" href="assets/tkro.png" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="gambar/tkro.png" />
   </head>
   <body>
-    <!-- navbar -->
+    <style>
+      .produk h2{
+    margin-top: 100px;
+    text-align: center;
+}
+div.card-group{
+    justify-items:center;
+    width: 90%;
+    border-radius: 15px;
+}
+      div.produk{
+    display:grid;
+    justify-items: center;
+}
+div.card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right:0px;
+    padding: 20px 20px 20px 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+div.card img{
+    padding: none;
+    width: 70%;
+    border-radius: 15px 15px 0px 0px;
+}
+img.card-image-top{
+  align-items: center;
+}
+h3.card-title{
+    text-align: right;
+}
+.card-body span{
+    margin-top: 45px;
+    background: #6157FF;
+    border-radius: 30px;
+    padding: 5px 10px 5px 10px;
+    color: white;
+}
+div.p-3 img{
+    width: 70%;
+    background:none;
+}
+div.buttonDetail, div.buttonProduk{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.buttonDetail a{
+    text-decoration: none;
+}
+
+.buttonProduk button{
+    text-align: center;
+    color: #fff;
+    width: 176px;
+    height: 39px;
+    background: #252525;
+    border-radius: 15px;
+    border: 0px solid;
+}
+.buttonProduk button a{
+    color: #fff;
+    text-decoration: none;
+}
+button{
+    text-align: center;
+}
+container.gelombang path{
+    background:#ae88ff;
+    background-size: 100px 100%;
+}
+div.bgColor{
+    margin-top:0px;
+    padding-top:0px;
+}
+.bgColor h2{
+    color: #ffffff;
+    text-align: center;
+}
+/* footer */
+.footer{
+    margin-top: 100px;
+    /* padding: 10px; */
+    background: linear-gradient(81.85deg, #360363 6.71%, #011846 86.1%);}
+    
+/* css Page Login */
+#colFooter{
+    /* width: 350px; */
+    background-color:transparent;
+    box-shadow: none;
+    color: #fff;
+    padding : 30px;
+}
+.wrapper-col-1 h1{
+    font-weight:800;
+    font-size: 2rem;
+}
+.wrapper-col-1 p{
+    font-size: 14px;
+    width : 90%;
+    text-align : left;
+}
+.wrapper-icon img{
+    width:25px;
+    margin-right: 10px;
+}
+
+.wrapper-col-2 {
+    width : 250px;
+    display: flex;
+    flex-direction: column;
+    text-align :left;
+}
+.wrapper-col-2 h1{
+    font-weight:500;
+    font-size: 1.5rem;
+    text-align : left;
+
+}
+.wrapper-col-2 p{
+    font-size: 14px;
+    width : 90%;
+    text-align : left;
+}
+.wrapper-col-3 h1{
+    width : 250px;
+    font-weight:500;
+    font-size: 1.5rem;
+    text-align : left;
+
+}
+.wrapper-col-3 p{
+    font-size: 14px;
+    width : 90%;
+    text-align : left;
+}
+.copyright{
+    color: #fff;
+    text-align : center;
+}
+/* chat */
+.pertanyaan {
+    background-color:#AE88FF;
+    padding:10px;
+    margin: 5px;
+    display:inline-flex;
+    border-radius: 10px;
+}
+.jawaban p{
+    text-align:right;
+    background-color:#D3D3D3;
+    padding:10px;
+    margin: 5px;
+    display:inline-flex;
+    border-radius: 10px;
+
+}
+.col-md-4 img{
+    width: 25px;
+    padding-top:5px;
+}
+    </style>
+   <!-- navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background: linear-gradient(89.97deg, #35015f 0.02%, #6157ff 99.97%);">
-  <div class="container">
-    <a class="navbar-brand" href="#">Cv.Adinalta</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="pesanan1.html">Pemesanan</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="notifikasi.html">Notifikasi</a>
-        </li>
-        <li class="nav-item">
-          <button
-         type="button"
-         class="btn btn-light"
-         style="border-radius: 30px; ">
-         <a href="login.html" style="text-decoration: none;">Login</a>
-       </button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
- <!-- akhir navbar -->
-    <!-- slider -->
-    <container class="slider">
-      <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="assets/parallax2.jpg" class="d-block w-100" alt="parallax sewa mobil" />
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Rental Mobil</h1>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/slider3.jpg" class="d-block w-100" alt="slider sewa mobil terbaik" />
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Sewa Mobil Terbaik</h2>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="assets/slider22.jpg" class="d-block w-100" alt="sewa mobil lengkap" />
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Tersedia Berbagai Macam Kendaraan</h2>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div class="container">
+      <a class="navbar-brand" href="#">Cv.Adinalta</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pesanan1.html">Pemesanan</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="notifikasi.html">Notifikasi</a>
+          </li>
+          <li class="nav-item">
+            <button
+           type="button"
+           class="btn btn-light"
+           style="border-radius: 30px; ">
+           <a href="loginNew.html" style="text-decoration: none;">Login</a>
+         </button>
+          </li>
+        </ul>
       </div>
-    </container>
-    <!-- akhir slider-->
-
-    <!-- Chat -->
-    <div class="fitur_chat">
-    <div class="icon_chat">
-      <div class="btn btn-primary position-fixed" style="border-radius: 30px; padding : 10px;"  data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="assets/chat.png" alt="chat sewa mobil"></div>
     </div>
-<div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Live Chat</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="pertanyaan"> <p>Selamat pagi, saya ingin tanya? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique, quisquam nisi sapiente maxime hic explicabo, odit cupiditate saepe ipsum tempore quis beatae nesciunt commodi. Aliquam sunt tempore pariatur delectus?</p> </div>
-    <div class="jawaban"><p>Iya, silahkan. loremlorem</p></div>
-  </div>
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-md-8"><input class="form-control" type="text" placeholder="Tuliskan Pesan" aria-label="default input example"></div>
-      <div class="col-md-4"><img src="assets/pesan.png" alt="pesan sewa mobil"></div>
-    </div>
-  
-</div>
-</div>
-    <container  class="input_data  ">
-      <!-- dropdown tipe mobil -->
+  </nav>
+   <!-- akhir navbar -->
 
-      <div class="dropdown">
+
+   <!-- isi konten -->
+   
+   <div class="container-fluid" style="background-image:url(assets/parallax2.jpg); width : 100%;">
+    <!-- slider -->
+    <container class="slider bg-dark"  >
+        <div id="carouselExampleCaptions" class="carousel slide bg-dark">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/parallax2.jpg" class="d-block w-100" alt="parallax sewa mobil" />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>Rental Mobil</h1>
+                <p>
+                  Some representative placeholder content for the first slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/slider3.jpg" class="d-block w-100" alt="slider sewa mobil terbaik" />
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Sewa Mobil Terbaik</h2>
+                <p>
+                  Some representative placeholder content for the second slide.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/slider22.jpg" class="d-block w-100" alt="sewa mobil lengkap" />
+              <div class="carousel-caption d-none d-md-block">
+                <h2>Tersedia Berbagai Macam Kendaraan</h2>
+                <p>
+                  Some representative placeholder content for the third slide.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </container>
+       <!-- akhir slider-->
+       
+     <!-- Chat -->
+     <button class="btn btn-primary fixed-bottom  m-3 rounded-3 " style="width: 50px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img src="assets/chat.png" style="width: 25px;" alt=""></button>
+
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Live Chat</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="pertanyaan"> <p>Selamat pagi, saya ingin tanya? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit similique, quisquam nisi sapiente maxime hic explicabo, odit cupiditate saepe ipsum tempore quis beatae nesciunt commodi. Aliquam sunt tempore pariatur delectus?</p> </div>
+      <div class="jawaban"><p>Iya, silahkan. loremlorem</p></div>
+    </div>
+    <div class="container text-center mb-4">
+      <div class="row">
+        <div class="col-8">
+          <input type="text" class="border rounded-2 shadow-sm border border-dark p-1" placeholder="Masukkan pesan">
+        </div>
+        <div class="col-4">
+          <img src="assets/pesan.png" style ="width :20px;" alt="chat rental mobil cv.adinalta" >
+        </div>
+      </div>
+    </div>
+  </div>   
+      
+   </div>
+    <div class="container-fluid d-flex justify-content-evenly mt-2 d-grid gap-2 mx-auto " >
+        <!-- dropdown tipe mobil -->
+      <div class="dropdown ">
         <button
           class="btn btn-primary dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
+          style="width: 100%;"
         >
           Tipe Mobil
         </button>
@@ -182,59 +356,62 @@
       </div>
       <!-- akhir dropdown -->
       <!-- datepicker -->
-      <div  class="tanggal">
-        <input type="datetime-local" />
+      <div  class="rounded">
+        <input class="rounded border border-1 p-2 shadow-sm" type="datetime-local" />
       </div>
       <!-- akhir datepicker -->
-    </container>
-    <container class="brand">
-      <div class="toyota">
-        <img src="assets/logo-toyota.png" alt="gambar logo toyota" />
+   </div>
+   
+   <!-- brand -->
+    <div class="row justify-content-center m-5 d-flex">
+      <div class="col-4">
+        <img class="img-fluid" src="assets/logo-toyota.png" alt="brand toyota" style="width:80%">
       </div>
-      <div class="mitsubishi">
-        <img src="assets/logo-mitsubishi.png" alt="gambar logo toyota" />
+      <div class="col-4">
+        <img class="img-fluid" src="assets/logo-mitsubishi.png" alt="brand mitsubishi">
       </div>
-    </container>
+    </div>
+
+
+    
     <!-- keunggulan -->
-    <container class="keunggulan">
-      <div class="title">
-        <h2>Kenapa Memillih Kami?</h2>
-      </div>
-      <div class="rowKeunggulan">
-        <div class="colKeunggulan">
-          <img src="assets/sewa-mobil-berpengalaman.png" alt="sewa mobil sopir berpengalaman">
-          <p>Sopir berpengalaman</p>
+    <div class="container text-center">
+      <h2 class="mb-4">Keunggulan</h2>
+      <div class="row">
+        <div class="col-sm p-3">
+          <img class="img-fluid" src="assets/sewa-mobil-berpengalaman.png" alt="sewa mobil supir berpengalaman">
+          <p class="fs-4">Sopir Berpengalaman</p>
         </div>
-        <div class="colKeunggulan">
-          <img src="assets/sewa-mobil-terbaik.png" alt="sewa mobil terbaik">
-          <p>Pelayanan Berkualitas</p>
+        <div class="col-sm p-3">
+          <img class="img-fluid" src="assets/sewa-mobil-terbaik.png" alt="sewa mobil terbaik">
+          <p class="fs-4">Pelayanan Berkualitas</p>
         </div>
-        <div class="colKeunggulan">
-          <img src="assets/sewa mobil murah.png" alt="sewa mobil murah">
-          <p>Harga Terjangkau</p>
+        <div class="col-sm p-3">
+          <img class="img-fluid" src="assets/sewa mobil murah.png" alt="sewa mobil murah">
+          <p class="fs-4">Harga Kompetitif</p>
         </div>
       </div>
-    </container>
-  
-    <!-- Produk -->
-    <container class="produk">
-      <h2>Produk</h2>
+    </div>
+    
+     <!-- Produk -->
+     <container class="produk">
+      <h2 class="mb-3">Produk</h2>
       <div class="produk">
         <div class="card-group">
           <div class="card">
-            <img
+            <img 
               src="assets/new avanza.jpg"
-              class="card-img-top"
+              class="card-img-top mx-5 "
               alt=" rental mobil avanza"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -242,7 +419,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -255,19 +432,19 @@
             </div>
           </div>
           <div class="card">
-            <img
+            <img 
               src="assets/xpander_prev_ui.png"
-              class="card-img-top"
+              class="card-img-top mx-5 "
               alt="rental mobil xpander"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -275,7 +452,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -288,19 +465,19 @@
             </div>
           </div>
           <div class="card">
-            <img
+            <img 
               src="assets/toyota-rush.png"
-              class="card-img-top"
+              class="card-img-top mx-5 "
               alt="Rental Mobil Toyota Rush"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -308,7 +485,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -325,19 +502,19 @@
       <div class="produk">
         <div class="card-group">
           <div class="card">
-            <img
+            <img 
               src="assets/grand innova.jpg"
-              class="card-img-top"
+              class="card-img-top mx-5 "
               alt="Rental mobil grand Innova"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -345,7 +522,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -358,19 +535,19 @@
             </div>
           </div>
           <div class="card">
-            <img
+            <img 
               src="assets/innova riborn.png"
-              class="card-img-top"
+              class="card-img-top mx-5 "
               alt="Rental Mobil Innova riborn"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -378,7 +555,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -391,19 +568,19 @@
             </div>
           </div>
           <div class="card">
-            <img
+            <img 
               src="assets/venturer.png"
-              class="card-img-top"
+              class="card-img-top mx-5"
               alt="rental mobil venturer"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -411,7 +588,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -428,19 +605,19 @@
       <div class="produk">
         <div class="card-group">
           <div class="card">
-            <img
+            <img 
               src="assets/fortuner.png"
-              class="card-img-top"
+              class="card-img-top mx-5 "
               alt="Rental mobil fortuner"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -448,7 +625,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -461,19 +638,19 @@
             </div>
           </div>
           <div class="card">
-            <img
+            <img 
               src="assets/pajero 1.svg"
-              class="card-img-top"
+              class="card-img-top mx-5 "
               alt="Rental Mobil pajero"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -481,7 +658,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -494,19 +671,19 @@
             </div>
           </div>
           <div class="card">
-            <img
+            <img 
               src="assets/alphard 1.svg"
-              class="card-img-top"
+              class="card-img-top mx-5 "
               alt="rental mobil Alphard"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -514,7 +691,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -531,19 +708,19 @@
       <div class="produk">
         <div class="card-group">
           <div class="card">
-            <img
+            <img 
               src="assets/vellfire (1).jpg"
-              class="card-img-top"
+              class="card-img-top mx-5 "
               alt="Rental mobil Vellfire"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -551,7 +728,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -565,19 +742,19 @@
           </div>
 
           <div class="card">
-            <img
+            <img 
               src="assets/hiace 1.svg"
-              class="card-img-top"
+              class="card-img-top mx-5 "
               alt="Rental Mobil Hiace"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -585,7 +762,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -598,19 +775,19 @@
             </div>
           </div>
           <div class="card">
-            <img
+            <img 
               src="assets/bus pariwisata.svg"
-              class="card-img-top"
+              class="card-img-top mx-5 "
               alt="rental bus"
             />
             <div class="card-body">
               <div class="container text-center">
                 <div class="row g-2">
                   <div class="col-6">
-                    <div class="p-3"><span> tersedia</span></div>
+                    <div class="p-1"><span> tersedia</span></div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h3>Xpander</h3></div>
+                    <div class="p-0"><h3>Xpander</h3></div>
                   </div>
                   <div class="col-6">
                     <div class="p-3">
@@ -618,7 +795,7 @@
                     </div>
                   </div>
                   <div class="col-6">
-                    <div class="p-3"><h5>Rp.560K/hari</h5></div>
+                    <div class="p-0"><h5>Rp.560K/hari</h5></div>
                   </div>
                 </div>
               </div>
@@ -633,114 +810,96 @@
         </div>
       </div>
     </container>
-    <!-- gelombang -->
-    <container class="gelombang">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ae88ff"
-          fill-opacity="1"
-          d="M0,96L48,106.7C96,117,192,139,288,144C384,149,480,139,576,122.7C672,107,768,85,864,90.7C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </container>
-    <div class="bgColor" style="background:#ae88ff; "hhhhhhh>
-      <div class="testimoni" >
-        <h2>Testimoni</h2>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="assets/testimoni_pelanggan sewa mobil.png" class="d-block w-100" alt="testimoni rental mobil makassar">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/testimoni_pelanggan sewa mobil.png" class="d-block w-100" alt="testimoni rental mobil makassar">
-            </div>
-            <div class="carousel-item">
-              <img src="assets/testimoni_pelanggan sewa mobil.png" class="d-block w-100" alt="testimoni rental mobil makassar">
+      <!-- gelombang -->
+      <container class="gelombang">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ae88ff"
+            fill-opacity="1"
+            d="M0,96L48,106.7C96,117,192,139,288,144C384,149,480,139,576,122.7C672,107,768,85,864,90.7C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </container>
+      <div class="bgColor" style="background:#ae88ff; "hhhhhhh>
+        <div class="testimoni" >
+          <h2>Testimoni</h2>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/testimoni_pelanggan sewa mobil.png" class="d-block w-100" alt="testimoni rental mobil makassar">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/testimoni_pelanggan sewa mobil.png" class="d-block w-100" alt="testimoni rental mobil makassar">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/testimoni_pelanggan sewa mobil.png" class="d-block w-100" alt="testimoni rental mobil makassar">
+              </div>
             </div>
           </div>
         </div>
+        <div class="client d-flex align-content-center flex-wrap flex-column">
+          <h2>Client Kami</h2>
+          <div class="card-group">
+            <div class="card p-0">
+              <img src="assets/client_wisata.jpeg" class="card-img-top" alt="pelanggan sewa mobil" style="width:100%;">
+              <div class="card-body  text-center">
+                <h5 class="card-title">Client</h5>
+                <p class="card-text">Orang Biasa </p>
+              </div>
+            </div>
+            <div class="card p-0">
+              <img src="assets/client_tumming.jpeg" class="card-img-top p-0" alt="pelanggan sewa mobil" style="width:100%;">
+              <div class="card-body  text-center">
+                <h5 class="card-title">Tumming Abu</h5>
+                <p class="card-text">Komedian dan Kreator Konten</p>
+              </div>
+            </div>
+            <div class="card p-0">
+              <img src="assets/client-arman.jpeg" class="card-img-top p-0" alt="pelanggan sewa mobil" style="width:100%;">
+              <div class="card-body  text-center">
+                <h5 class="card-title">Armand Maulana</h5>
+                <p class="card-text">Musisi</p>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ffffff"
+            fill-opacity="1"
+            d="M0,96L48,106.7C96,117,192,139,288,144C384,149,480,139,576,122.7C672,107,768,85,864,90.7C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
       </div>
-      <div class="client d-flex align-content-center flex-wrap flex-column">
-        <h2>Client Kami</h2>
-        <div class="card-group">
-          <div class="card p-0">
-            <img src="assets/client_wisata.jpeg" class="card-img-top" alt="pelanggan sewa mobil" style="width:100%;">
-            <div class="card-body  text-center">
-              <h5 class="card-title">Client</h5>
-              <p class="card-text">Orang Biasa </p>
-            </div>
-          </div>
-          <div class="card p-0">
-            <img src="assets/client_tumming.jpeg" class="card-img-top p-0" alt="pelanggan sewa mobil" style="width:100%;">
-            <div class="card-body  text-center">
-              <h5 class="card-title">Tumming Abu</h5>
-              <p class="card-text">Komedian dan Kreator Konten</p>
-            </div>
-          </div>
-          <div class="card p-0">
-            <img src="assets/client-arman.jpeg" class="card-img-top p-0" alt="pelanggan sewa mobil" style="width:100%;">
-            <div class="card-body  text-center">
-              <h5 class="card-title">Armand Maulana</h5>
-              <p class="card-text">Musisi</p>
-            </div>
-          </div>
-        </div>
+
+      <!-- Tentang Kami -->
       
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path
-          fill="#ffffff"
-          fill-opacity="1"
-          d="M0,96L48,106.7C96,117,192,139,288,144C384,149,480,139,576,122.7C672,107,768,85,864,90.7C960,96,1056,128,1152,138.7C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-        ></path>
-      </svg>
-    </div>
-    <!-- Tentang Kami -->
-    <div class="tentangKami">
-      <h2>Tentang Kami</h2>
-      <div class="row justify-content-evenly">
-        <div class="col-4">
-          <div class="card" style="width: 18rem">
-            <img
-              src="assets/logo sewa mobil makassar cv adinalta.png"
-              class="card-img-top"
-              alt="logo cv.adinalta"
-            />
-            <div class="card-body">
-              <h5 class="card-title">CV. ADINALTA</h5>
-              <p class="card-text">
-                Rental Mobil yang berpengalaman selama 100 Tahun
-              </p>
-              <a href="#" class="btn btn-primary">Lihat Selengkapnya</a>
+      <div class="container text-center">
+        <h2>Tentang Kami</h2>
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="kerjasama shadow-sm border border-1 p-4 m-2 rounded">
+              <h3>Ingin Melakukan Kerjasama dengan Kami?</h3>
+              <p>Hubungi Kami</p>
+              <a href="#"><img style="width: 50px" src="assets/informasi kerja sama rental mobil.png" alt="informasi kerja sama rental mobil" style="background:none;"></a>
+              <p class="atau">atau</p>
+              <button class="btn btn-dark">Daftar Disini</button>
+        
             </div>
           </div>
-        </div>
-        <div class="col-4">
-          <div class="embed-responsive embed-responsive ratio-16x9 " >
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.481682517147!2d119.45736307296771!3d-5.1866949947908045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee24df4c360c7%3A0x8e9b6475a11ea2a!2sJl.%20Minasa%20Upa%20No.M.16%2F8%2C%20RT.002%2FRW.09%2C%20Gn.%20Sari%2C%20Kec.%20Rappocini%2C%20Kota%20Makassar%2C%20Sulawesi%20Selatan%2090222!5e0!3m2!1sid!2sid!4v1682946760914!5m2!1sid!2sid" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="col-sm-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1986.7417039680902!2d119.4589988!3d-5.1864209!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dbee3da37f54031%3A0x9de53a808befd3e4!2sBTN%20Minasa%20upa%20Blok%20M%206%20no%207!5e0!3m2!1sid!2sid!4v1683994249983!5m2!1sid!2sid" style="border:0; width : 98%; height : 250px; margin: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
-    </div>
-    <!-- informasi kerja sama -->
-    <div class="kerjasama">
-      <p>Ingin Melakukan Kerjasama dengan Kami?</p>
-      <p>Hubungi Kami</p>
-      <a href="#"><img src="assets/informasi kerja sama rental mobil.png" alt="informasi kerja sama rental mobil" style="background:none;"></a>
-      <p class="atau">atau</p>
-      <button class="info">Daftar Disini</button>
-
-    </div>
-
-    <!-- Artikel -->
-    <div class="artikel justify-content-lg-start">
-      <h2>Artikel</h2>
-      <div class="cardArtikel">
-        <div class="container text-center">
-          <div class="row align-items-start">
-            <div class="col">
-              <div class="cardArtikel" style="width: 18rem">
-                <img
+      <!-- Artikel -->
+      <div class="container text-center">
+        <h2 class="artikel" > Artikel</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+          <div class="col mb-4 mt-4 shadow-sm border border-1 px-0 pt-0 pb-3 rounded m-0 d-flex justify-content-center">
+            <div class="cardArtikel" style="width: 18rem">
+                <img style="height: 240px"
                   src="assets/99 kubah.jpg"
                   class="card-img-top"
                   alt="destinasi wisata makassar"
@@ -751,56 +910,53 @@
                   <a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="cardArtikel" style="width: 18rem">
-                <img
-                  src="assets/apparalarang.png"
-                  class="card-img-top"
-                  alt="destinasi wisata makassar"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Tebing Appalarang</h5>
-                  <p class="card-text">Bulukumba</p>
-                  <a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
-                </div>
+          </div>
+          <div class="col mb-4 mt-4 shadow-sm border border-1 px-0 pt-0 pb-3 rounded m-0 d-flex justify-content-center">
+            <div class="cardArtikel" style="width: 18rem">
+              <img style="height: 240px"
+                src="assets/bira.png"
+                class="card-img-top"
+                alt="destinasi wisata makassar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tanjung Bira</h5>
+                <p class="card-text">Bulukumba</p>
+                <a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
               </div>
             </div>
-            <div class="col">
-              <div class="cardArtikel" style="width: 18rem">
-                <img
-                  src="assets/bira.png"
-                  class="card-img-top"
-                  alt="destinasi wisata makassar"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Tanjung Bira</h5>
-                  <p class="card-text">Bulukumba</p>
-                  <a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
-                </div>
+          </div>
+          <div class="col mb-4 mt-4 shadow-sm border border-1 px-0 pt-0 pb-3 rounded m-0 d-flex justify-content-center">
+            <div class="cardArtikel" style="width: 18rem">
+              <img style="height: 240px"
+                src="assets/bantimurung.jpeg"
+                class="card-img-top"
+                alt="destinasi wisata makassar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Bantimurung</h5>
+                <p class="card-text">Maros</p>
+                <a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
               </div>
             </div>
-            <div class="col">
-              <div class="cardArtikel" style="width: 18rem">
-                <img
-                  src="assets/bantimurung.jpeg"
-                  class="card-img-top"
-                  alt="destinasi wisata makassar"
-                />
-                <div class="card-body">
-                  <h5 class="card-title">Bantimurung</h5>
-                  <p class="card-text">Maros</p>
-                  <a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
-                </div>
+          </div>
+          <div class="col mb-4 mt-4 shadow-sm border border-1 px-0 pt-0 pb-3 rounded m-0 d-flex justify-content-center">
+            <div class="cardArtikel" style="width: 18rem">
+              <img style="height: 240px"
+                src="assets/apparalarang.png"
+                class="card-img-top"
+                alt="destinasi wisata makassar"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Tebing Appalarang</h5>
+                <p class="card-text">Bulukumba</p>
+                <a href="#" class="btn btn-dark">Lihat Selengkapnya</a>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    
+      </div>  
 
-    <!-- footer -->
+       <!-- footer -->
     <section class="footer justify-content-evenly">
       <footer>
         <div class="row">
@@ -810,8 +966,8 @@
               <p>Rental mobil Makassar berkulitas, terjangkau dan Aman</p>
               <div class="wrapper-icon d-flex">
                 <a href="#"><img src="assets/facebook-cv.adinalta.png" alt="facebook cv.adinalta"></a>
-                <a href="#"><img src="assets/instagram-cv.adinalta" alt="instagram cv.adinalta"></a>
-                <a href="#"><img src="assets/twitter-cv.adinalta" alt="twitter cv.adinalta"></a>                
+                <a href="#"><img src="assets/instagram-cv.adinalta.png" alt="instagram cv.adinalta"></a>
+                <a href="#"><img src="assets/twitter-cv.adinalta.png" alt="twitter cv.adinalta"></a>                
               </div>
           </div>
         </div>
@@ -846,6 +1002,7 @@
         <div class="copyright">© Copyright CV. ADINALTA All Right Reserved</div>
       </footer>
     </section>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
