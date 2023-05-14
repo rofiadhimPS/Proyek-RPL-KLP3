@@ -18,10 +18,23 @@ use App\Http\Controllers\Auth\RegisterController;
 |
 */
 
-Route::get('/home', function () {
-    return view('home');
-});
 Route::get('/', function () {
+    return view('welcome');
+})->name('welcome');
+
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::get('/checkout', function () {
+    return view('checkout');
+})->name('checkout');
+
+Route::get('/success-checkout', function () {
+    return view('success_checkout');
+})->name('success-checkout');
+
+Route::get('/home', function () {
     return view('home_versiProfil');
 });
 
@@ -62,13 +75,7 @@ Route::get('/webadmin/produk', function () {
         'title'=>"Produk"
     ]);
 });
-Route::get('/login', function () {
-<<<<<<< HEAD
-    return view('loginNew');
-=======
-    return view('login');
->>>>>>> 649c926aeb73148047c6096351c009667f33080a
-});
+
 Route::get('/daftar', function () {
     return view('daftar');
 });

@@ -27,17 +27,17 @@
          <!-- navbar -->
  <nav class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top" style="background: linear-gradient(89.97deg, #35015f 0.02%, #6157ff 99.97%);">
   <div class="container">
-    <a class="navbar-brand" href="#">Cv.Adinalta</a>
+    <a class="navbar-brand" href="{{route('welcome')}}">Cv.Adinalta</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse flex-row-reverse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Beranda</a>
+          <a class="nav-link" aria-current="page" href="{{route('welcome')}}">Beranda</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/pesanan">Pemesanan</a>
+          <a class="nav-link" href="#">Pemesanan</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/notifikasi">Notifikasi</a>
@@ -151,7 +151,7 @@
           <input class="form-control" type="file" id="formFile">
         </div>
         <div>
-          <a href="#" class="btn btn-primary">Pesan Sekarang</a>
+          <a href="{{route('success-checkout')}}" class="btn btn-primary">Pesan Sekarang</a>
         </div>
         
       </div>

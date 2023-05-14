@@ -19,9 +19,8 @@
       integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51"
       crossorigin="anonymous"
     />
-<<<<<<< HEAD
-    <link rel="icon" href="{{ asset('assets/tkro.png') }}" />
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}" />
+    <link rel="icon" href="{{asset('assets/tkro.png')}}" />
+    <link rel="stylesheet" href="{{asset('css/style.css')}}" />
   </head>
   <body>
     <!-- navbar -->
@@ -55,56 +54,6 @@
   </div>
 </nav>
  <!-- akhir navbar -->
-=======
-    <link rel="icon" href="('assets/tkro.png')" />
-    <link rel="stylesheet" href="{{asset('css/style.css')}}" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
-      style="
-        background: linear-gradient(89.97deg, #35015f 0.02%, #6157ff 99.97%);
-      "
-    >
-      <div class="container">
-        <a class="navbar-brand" href="#">Cv. Adinalta</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html"
-                >Beranda</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="pesanan1.html">Pemesanan</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="notifikasi.html">Notifikasi</a>
-            </li>
-            <button
-              type="button"
-              class="btn btn-light"
-              style="border-radius: 30px; ">
-              <a href={{ url('/login') }}>Login</a>
-            </button>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- akhir navbar -->
->>>>>>> 649c926aeb73148047c6096351c009667f33080a
     <!-- slider -->
     <container class="slider">
       <div id="carouselExampleCaptions" class="carousel slide">
